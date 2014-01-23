@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+        <remote name="openembedded"
+                fetch="git://github.com/openembedded" />
+
+        <remote name="Xilinx"
+                fetch="git://github.com/Xilinx" />
+
+        <remote name="balister"
+                fetch="git://github.com/balister" />
+
+
+        <remote name="jpendlum"
+                fetch="git://github.com/jpendlum" />
+ 
+        <default remote="openembedded" revision="master"  />
+
+        <project name="bitbake"  path="oe/bitbake" />
+        <project name="oe-core"  path="oe/oe-core" />
+        <project name="meta-oe"  path="oe/meta-oe" />
+
+        <project name="meta-sdr" remote="balister" path="oe/meta-sdr" />
+
+        <project name="meta-xilinx" remote="jpendlum" path="oe/meta-xilinx" revision="master" />
+        <project name="meta-zynq-gnuradio" remote="jpendlum" path="oe/meta-zynq-gnuradio" revision="master" />
+        <project name="zynq-acp" remote="jpendlum" path="zynq-acp" revision="fir-filter-example" />
+        <project name="gr-zynq" remote="jpendlum" path="gr-zynq" revision="master" />
+
+</manifest>
