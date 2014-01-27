@@ -10,7 +10,6 @@
         <remote name="balister"
                 fetch="git://github.com/balister" />
 
-
         <remote name="jpendlum"
                 fetch="git://github.com/jpendlum" />
  
@@ -22,7 +21,7 @@
 
         <project name="meta-sdr" remote="balister" path="oe/meta-sdr" />
 
-        <project name="meta-xilinx" remote="jpendlum" path="oe/meta-xilinx" revision="master" />
+        <project name="meta-xilinx" remote="jpendlum" path="oe/meta-xilinx" revision="zynq-gnuradio" />
         <project name="meta-zynq-gnuradio" remote="jpendlum" path="oe/meta-zynq-gnuradio" revision="master" />
         <project name="zynq-acp" remote="jpendlum" path="zynq-acp" revision="fir-filter-example" />
         <project name="gr-zynq" remote="jpendlum" path="gr-zynq" revision="master" />
