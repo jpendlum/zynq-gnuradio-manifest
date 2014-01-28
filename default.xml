@@ -15,9 +15,9 @@
  
         <default remote="openembedded" revision="master"  />
 
-        <project name="bitbake"  path="bitbake" revision="1dbf400c662354b7826b2b97ee2e3e6d11af9fd2" upstream="refs/heads/master"/>
-        <project name="oe-core"  path="oe-core" revision="24d5b449e5f4d91119f0d8e13c457618811aadfc" upstream="refs/head/master"/>
-        <project name="meta-oe"  path="meta-oe" revision="6572316557e742c2dc93848e4d560242bf0c3995" upstream="refs/head/master"/>
+        <project name="bitbake"  path="oe/bitbake" revision="1dbf400c662354b7826b2b97ee2e3e6d11af9fd2" upstream="refs/heads/master"/>
+        <project name="oe-core"  path="oe/oe-core" revision="24d5b449e5f4d91119f0d8e13c457618811aadfc" upstream="refs/head/master"/>
+        <project name="meta-oe"  path="oe/meta-oe" revision="6572316557e742c2dc93848e4d560242bf0c3995" upstream="refs/head/master"/>
 
         <project name="meta-sdr" remote="balister" path="oe/meta-sdr" />
 
