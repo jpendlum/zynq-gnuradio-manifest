@@ -11,6 +11,11 @@
              but remove his meta-xilinx project as we will use our own -->
         <include name="../../../oe-gnuradio-manifest/default.xml" />
         <remove-project name="meta-xilinx" />
+        <!-- Remove unnecessary OE layers to reduce clutter -->
+        <remove-project name="meta-fsl-arm" />
+        <remove-project name="meta-fsl-arm-extra" />
+        <remove-project name="meta-ti" />
+        <remove-project name="meta-ettus" />
 
         <project name="meta-xilinx" remote="jpendlum" path="meta-xilinx" revision="zynq-gnuradio" />
         <project name="meta-zynq-gnuradio" remote="jpendlum" path="meta-zynq-gnuradio" revision="master" />
