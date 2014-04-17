@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-        <remote name="openembedded"
-                fetch="git://github.com/openembedded" />
-
-        <remote name="Xilinx"
-                fetch="git://github.com/Xilinx" />
-
         <remote name="balister"
                 fetch="git://github.com/balister" />
 
         <remote name="jpendlum"
                 fetch="git://github.com/jpendlum" />
  
-        <default remote="openembedded" revision="master"  />
+        <!-- Include Philip Balister's manifest so we can get all the OpenEmbedded repositories and meta-sdr,
+             but remove his meta-xilinx project as we will use our own -->
+        <include name="../../../oe-gnuradio-manifest/default.xml" />
+        <remove-project name="meta-xilinx" />
 
-        <project name="bitbake"  path="oe/bitbake" revision="1dbf400c662354b7826b2b97ee2e3e6d11af9fd2" upstream="refs/heads/master"/>
-        <project name="oe-core"  path="oe/oe-core" revision="24d5b449e5f4d91119f0d8e13c457618811aadfc" upstream="refs/head/master"/>
-        <project name="meta-oe"  path="oe/meta-oe" revision="6572316557e742c2dc93848e4d560242bf0c3995" upstream="refs/head/master"/>
-
-        <project name="meta-sdr" remote="balister" path="oe/meta-sdr" />
-
-        <project name="meta-xilinx" remote="jpendlum" path="oe/meta-xilinx" revision="zynq-gnuradio" />
-        <project name="meta-zynq-gnuradio" remote="jpendlum" path="oe/meta-zynq-gnuradio" revision="master" />
-        <project name="zynq-acp" remote="jpendlum" path="zynq-acp" revision="fir-filter-example" />
-        <project name="gr-zynq" remote="jpendlum" path="gr-zynq" revision="master" />
-        <project name="zynq-fir-filter-example" remote="jpendlum" path="zynq-fir-filter-example" revision="master" />
+        <project name="meta-xilinx" remote="jpendlum" path="meta-xilinx" revision="zynq-gnuradio" />
+        <project name="meta-zynq-gnuradio" remote="jpendlum" path="meta-zynq-gnuradio" revision="master" />
+        <project name="zynq-acp" remote="jpendlum" path="../zynq-acp" revision="fir-filter-example" />
+        <project name="gr-zynq" remote="jpendlum" path="../gr-zynq" revision="master" />
+        <project name="zynq-fir-filter-example" remote="jpendlum" path="../zynq-fir-filter-example" revision="master" />
 
 </manifest>
